@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma empresa aí</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="container">
+            <li><a href='#'>Página Inicial</a></li>
+            <li class='dropdown'>
+                <a href='#'>Páginas <i class="fa fa-angle-down"></i></a>
+                <div class='mega-menu'>
+                    <div class="container">
+                        <div class="item">
+                            <h3>Páginas do Projeto</h3>
+                            <ul>
+                                <li><a href='#'>Inicio do Projeto</a></li>
+                                <li><a href='#'>Tabela IMC</a></li>
+                                <li><a href='#'>Formulários</a></li>
+                            </ul>
+                        </div>
+    </nav>
+    <figure class="cabecalho">
+        <img
+            src="https://blogs.iadb.org/brasil/wp-content/uploads/sites/29/2019/12/lista_saude-publica_gestao-em-saude.jpg">
+    </figure>
+
+
+    <div class="titulo">
+        <h1>Seja Bem-Vindo, a Saude!</h1>
+    </div>
+    <h2>Preencha o formulário abaixo</h2>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="grupo-formulario">
+                    <label>Nome:</label>
+                    <input type="text" />
+                    <label>Sobrenome:</label>
+                    <input type="text" />
+
+                </div>
+                <div class="grupo-formulario">
+                    <label>Nascimento:</label>
+                    <input type="number" min="1" max="31" placeholder="dd">
+                    <input type="number" min="1" max="12" placeholder="mm">
+                    <input type="number" min="1900" max="2022" placeholder="yyyy">
+                </div>
+                <div class="grupo-formulario">
+                    <label>Sexo:</label>
+                    <select id="Sexo" name="Sexo">
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Ferminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label>CPF:</label>
+                    <input class="cpf" type="number" min="000000000" max="999999999"> <span>-</span> <input
+                        type="number" min="00" max="99">
+            </fieldset>
+    </div>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <div class="grupo-formulario">
+                    <label>Rua:</label>
+                    <input type="text" />
+                    <label>Numero:</label>
+                    <input type="text" />
+                </div>
+                <div class="grupo-formulario">
+                    <label>Bairro:</label>
+                    <input type="text" />
+                    <div>
+                        <label>Estado:</label>
+                        <select id="UF" name="UF">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="grupo-formulario">
+                    <label>Cidade:</label>
+                    <input type="text">
+                </div>
+                <div class="grupo-formulario">
+                    <label>CEP:</label>
+                    <input class="CEP" type="number" min="5" max="5"> <span>-</span> <input type="number" min="2"
+                        max="2">
+                </div>
+            </fieldset>
+
+            <div class="grupo-formulario">
+
+                <Button> Enviar </Button>
+                <Button> Limpar </Button>
+            </div>
+</body>
+
+</html>
