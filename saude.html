@@ -21,8 +21,8 @@
                         <div class="item">
                             <h3>Páginas do Projeto</h3>
                             <ul>
-                                <li><a href='#'>Inicio do Projeto</a></li>
-                                <li><a href='#'>Tabela IMC</a></li>
+                                <li><a href='#'>Sobre nós</a></li>
+                                <li><a href='#'>Calculo de IMC</a></li>
                                 <li><a href='#'>Formulários</a></li>
                             </ul>
                         </div>
@@ -134,6 +134,19 @@
                 <Button> Enviar </Button>
                 <Button> Limpar </Button>
             </div>
+
+            <hr>
+            
+            <div class="IMC">
+                <h2>Calcule seu IMC</h2>
+                <h3>Altura (m)</h3>
+                <input id="altura" type="number">
+                <h3>Peso (kg)</h3>
+                <input id="peso" type="number">
+                <button onclick="calculo()">Calcular</button>
+                <textarea name="" id="texto_resultado" rows="8"></textarea>
+            </div>
+            <script src="index.js"></script>
 </body>
 
 </html>
