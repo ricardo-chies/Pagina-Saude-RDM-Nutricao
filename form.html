@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uma empresa aí</title>
+    <title>Fale conosco</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -13,50 +13,41 @@
 
     <nav>
         <ul class="container">
-            <li><a href='#'>Página Inicial</a></li>
-            <li class='dropdown'>
-                <a href='#'>Páginas <i class="fa fa-angle-down"></i></a>
-                <div class='mega-menu'>
-                    <div class="container">
-                        <div class="item">
-                            <h3>Páginas do Projeto</h3>
-                            <ul>
-                                <li><a href='#'>Sobre nós</a></li>
-                                <li><a href='#'>Calculo de IMC</a></li>
-                                <li><a href='#'>Formulários</a></li>
-                            </ul>
-                        </div>
+            <li><a href='home.html'>Página Inicial</a></li>
+            <li><a href='sobre.html'>Sobre nós</a></li>
+            <li><a href='imc.html'>Calculo de IMC</a></li>
+            <li><a href='form.html'>Fale conosco</a></li>
+            </div>
     </nav>
+
     <figure class="cabecalho">
-        <img
-            src="https://blogs.iadb.org/brasil/wp-content/uploads/sites/29/2019/12/lista_saude-publica_gestao-em-saude.jpg">
+        <img src="https://innoveclinic.com.br/wp-content/uploads/2015/12/banner-nutricao-innoveclinic-1.jpg">
     </figure>
 
-
     <div class="titulo">
-        <h1>Seja Bem-Vindo, a Saude!</h1>
+    <h1>Deseja entrar em contato conosco?</h1>
     </div>
-    <h2>Preencha o formulário abaixo</h2>
+    <h2>Preencha o formulário abaixo e enviaremos um e-mail para você.</h2>
     <div id="area">
         <form id="formulario" autocomplete="off">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <div class="grupo-formulario">
+                <div class="grupo_formulario">
                     <label>Nome:</label>
-                    <input type="text" />
+                    <input class="grupo_formulario" type="text" />
                     <label>Sobrenome:</label>
                     <input type="text" />
 
                 </div>
                 <div class="grupo-formulario">
                     <label>Nascimento:</label>
-                    <input type="number" min="1" max="31" placeholder="dd">
+                    <input class="grupo_formulario" type="number" min="1" max="31" placeholder="dd">
                     <input type="number" min="1" max="12" placeholder="mm">
                     <input type="number" min="1900" max="2022" placeholder="yyyy">
                 </div>
                 <div class="grupo-formulario">
                     <label>Sexo:</label>
-                    <select id="Sexo" name="Sexo">
+                    <select class="grupo_formulario" id="Sexo" name="Sexo">
                         <option value="">Selecione</option>
                         <option value="Masculino">Masculino</option>
                         <option value="Ferminino">Feminino</option>
@@ -65,26 +56,27 @@
                 </div>
                 <div class="grupo-formulario">
                     <label>CPF:</label>
-                    <input class="cpf" type="number" min="000000000" max="999999999"> <span>-</span> <input
+                    <input class="grupo_formulario" type="number" min="100000000" max="999999999"> <span>-</span> <input
                         type="number" min="00" max="99">
             </fieldset>
     </div>
+    <br>
     <div id="area">
         <form id="formulario" autocomplete="off">
             <fieldset>
                 <legend>Dados de Endereço</legend>
                 <div class="grupo-formulario">
                     <label>Rua:</label>
-                    <input type="text" />
+                    <input class="grupo_formulario" type="text" />
                     <label>Numero:</label>
                     <input type="text" />
                 </div>
                 <div class="grupo-formulario">
                     <label>Bairro:</label>
-                    <input type="text" />
+                    <input class="grupo_formulario" type="text" />
                     <div>
                         <label>Estado:</label>
-                        <select id="UF" name="UF">
+                        <select class="grupo_formulario" id="UF" name="UF">
                             <option value="">Selecione</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -120,33 +112,17 @@
                 </div>
                 <div class="grupo-formulario">
                     <label>Cidade:</label>
-                    <input type="text">
+                    <input class="grupo_formulario" type="text">
                 </div>
                 <div class="grupo-formulario">
                     <label>CEP:</label>
-                    <input class="CEP" type="number" min="5" max="5"> <span>-</span> <input type="number" min="2"
+                    <input class="grupo_formulario" type="number" min="5" max="5"> <span>-</span> <input type="number" min="2"
                         max="2">
                 </div>
             </fieldset>
 
             <div class="grupo-formulario">
 
-                <Button> Enviar </Button>
-                <Button> Limpar </Button>
+                <Button class="botao_fale"> Enviar </Button>
+                <Button class="botao_fale"> Limpar </Button>
             </div>
-
-            <hr>
-            
-            <div class="IMC">
-                <h2>Calcule seu IMC</h2>
-                <h3>Altura (m)</h3>
-                <input id="altura" type="number">
-                <h3>Peso (kg)</h3>
-                <input id="peso" type="number">
-                <button onclick="calculo()">Calcular</button>
-                <textarea name="" id="texto_resultado" rows="8"></textarea>
-            </div>
-            <script src="index.js"></script>
-</body>
-
-</html>

@@ -5,7 +5,9 @@ function calculo() {
     var resultado = peso / (altura * altura)
 
     var texto = ""
-    if (resultado < 18.5)
+    if (resultado = "")
+        texto="Preencha seus dados!"
+    else if (resultado < 18.5)
         texto="Magreza"
     else if (resultado < 24.9)
         texto="Peso normal"
