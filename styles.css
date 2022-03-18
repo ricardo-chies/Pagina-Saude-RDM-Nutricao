@@ -1,3 +1,11 @@
+html {
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +29,7 @@ ul {
 }
 
 nav {
-  background: indigo;
+  background: black;
   font-size: 0;
   position: relative;
 
@@ -43,8 +51,8 @@ nav>ul>li>a {
 }
 
 nav>ul>li:hover>a {
-  color: blueviolet;
-  border-bottom: 3px solid blueviolet;
+  color: #019c96;
+  border-bottom: 3px solid #019c96;
 }
 
 .cabecalho {
@@ -59,10 +67,12 @@ nav>ul>li:hover>a {
 
 h1 {
   font-size: 50px;
+  color: white;
 }
 
 h2 {
   font-size: 30px;
+  color: white;
 }
 
 .sobre {
@@ -105,6 +115,13 @@ input {
 
 .grupo_formulario {
   margin-top: 1em;
+  color: white;
+}
+
+fieldset {
+  margin-left: 2em;
+  margin-right: 7em;
+  color: white;
 }
 
 .input_area {
@@ -117,14 +134,33 @@ input {
 }
 
 .imc {
-  background-color: indigo;
+  background-color: #019c96;
   display: inline-flex;
   padding: 1.5em;
   border-radius: 1em;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: black;
   width: 20em;
+}
+
+.imc_titulo {
+  color: black;
+}
+
+table {
+  border: 1px solid black;
+  display: inline-flexbox;
+  text-align: center;
+  background-color: white;
+}
+
+.tb_claro {
+  background: white;
+}
+
+.tb_escuro {
+  background: #9f9f9f;
 }
 
 textarea {
@@ -139,9 +175,10 @@ textarea {
 button {
   height: 3em;
   width: 100%;
-  background-color: black;
+  background-color:black;
   border: none;
   color: white;
+  border-radius: 1.5em;
 }
 
 button:hover {
@@ -151,8 +188,8 @@ button:hover {
 .botao_fale {
   height: 3em;
   width: 15em;
-  background-color: black;
-  color: white;
+  background-color: #019c96;
+  color: black;
   margin-top: 1em;
   margin-left: 2em;
 }

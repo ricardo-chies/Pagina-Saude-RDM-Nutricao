@@ -6,16 +6,18 @@ function calculo() {
 
     var texto = ""
     if (resultado = "")
-        texto="Preencha seus dados!"
+        texto = "Preencha seus dados!"
     else if (resultado < 18.5)
-        texto="Magreza"
+        texto = "Seu resultado é 'Magreza' seu imc é: "
     else if (resultado < 24.9)
-        texto="Peso normal"
+        texto = "Peso normal"
     else if (resultado < 29.9)
-        texto="Sobrepeso"
+        texto = "Sobrepeso"
         else if (resultado < 39.9)
-        texto="Obesidade"
+        texto = "Obesidade"
     else
-        texto="Obesidade grave"
-    document.getElementById("texto_resultado").innerText=texto
+        texto = "Obesidade grave"
+
+       var imc = document.getElementById("texto_resultado").innerHTML = texto
+
 }
