@@ -13,12 +13,12 @@
 
     <nav>
         <ul class="container">
-            <li><a href='home.html'>Página Inicial</a></li>
-            <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='imc.html'>Calculo de IMC</a></li>
+            <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='form.html'>Fale conosco</a></li>
             </div>
     </nav>
+
     <figure class="cabecalho">
         <img src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
     </figure>
@@ -40,34 +40,34 @@
             enfermeiros e nutricionistas avaliem o IMC da pessoa nas consultas de rotina para verificar
             a possibilidade de doenças que a pessoa pode estar pre-disposta.
 
-            <div >
-                <table class="tabela" border="1">
-                    <tr>
+            <div class="tabela">
+                <table>
+                    <tr class="tb_escuro">
                         <th>IMC</th>
                         <th>CLASSIFICAÇÃO</th>
                         <th>OBESIDADE(GRAU)</th>
                     </tr>
-                    <tr>
+                    <tr class="tb_claro">
                         <td>MENOR QUE 18,5</td>
                         <td>MAGREZA</td>
                         <td>0</td>
                     </tr>
-                    <tr>
+                    <tr class="tb_escuro">
                         <td>ENTRE 18,5 E 24,9</td>
                         <td>NORMAL</td>
                         <td>0</td>
                     </tr>
-                    <tr>
+                    <tr class="tb_claro">
                         <td>ENTRE 25,0 E 29,9</td>
                         <td>SOBREPESO</td>
                         <td>I</td>
                     </tr>
-                    <tr>
+                    <tr class="tb_escuro">
                         <td>ENTRE 30,0 E 39,9</td>
                         <td>OBESIDADE</td>
                         <td>II</td>
                     </tr>
-                    <tr>
+                    <tr class="tb_claro">
                         <td>MAIOR QUE 40,0</td>
                         <td>OBESIDADE GRAVE</td>
                         <td>III</td>
@@ -91,8 +91,15 @@
                 <input id="peso" type="number">
             </div>
             <button id="botao_calcular" onclick="calculo()">Calcular</button>
-            <textarea name="" id="texto_resultado" rows="8"></textarea>
+
+            <div class="resultado_imc">
+            Resultado: <span id="resultado"></span>
+        </div>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
+<footer>
+    
+</footer>

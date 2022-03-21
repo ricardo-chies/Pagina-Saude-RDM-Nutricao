@@ -1,23 +1,20 @@
 function calculo() {
     var altura = document.getElementById("altura").value
     var peso = document.getElementById("peso").value
+    var imc = parseFloat(peso) / parseFloat(altura * altura)
+    var resultado = document.querySelector('span')
+    console.log(altura, peso)
+    console.log(imc)
 
-    var resultado = peso / (altura * altura)
-
-    var texto = ""
-    if (resultado = "")
-        texto = "Preencha seus dados!"
-    else if (resultado < 18.5)
-        texto = "Seu resultado é 'Magreza' seu imc é: "
-    else if (resultado < 24.9)
-        texto = "Peso normal"
-    else if (resultado < 29.9)
-        texto = "Sobrepeso"
-        else if (resultado < 39.9)
-        texto = "Obesidade"
+    if (imc < 18.5)
+        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Magreza"
+    else if (imc < 24.9)
+        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Peso normal"
+    else if (imc < 29.9)
+        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Sobrepeso"
+    else if (imc < 39.9)
+        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Obesidade"
     else
-        texto = "Obesidade grave"
-
-       var imc = document.getElementById("texto_resultado").innerHTML = texto
-
+        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Obesidade grave"
+    console.log(resultado)
 }

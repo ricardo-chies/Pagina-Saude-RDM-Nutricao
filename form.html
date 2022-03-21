@@ -13,20 +13,20 @@
 
     <nav>
         <ul class="container">
-            <li><a href='home.html'>Página Inicial</a></li>
-            <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='imc.html'>Calculo de IMC</a></li>
+            <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='form.html'>Fale conosco</a></li>
             </div>
     </nav>
 
     <figure class="cabecalho">
-        <img src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
+        <img
+            src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
     </figure>
 
     <div class="titulo">
-    <h1>Deseja entrar em contato conosco?</h1>
-    <h2>Preencha o formulário abaixo e enviaremos um e-mail para você.</h2>
+        <h1>Deseja entrar em contato conosco?</h1>
+        <h2>Preencha o formulário abaixo e enviaremos um e-mail para você.</h2>
     </div>
     <div id="area">
         <form id="formulario" autocomplete="off">
@@ -57,11 +57,11 @@
                 <div>
                     <label>E-mail:</label>
                     <input class="grupo_formulario" type="email" />
-                </div>            
+                </div>
                 <div class="grupo-formulario">
                     <label>CPF:</label>
-                    <input class="grupo_formulario" type="number" min="100000000" max="999999999"> <span>-</span> <input
-                        type="number" min="00" max="99">
+                    <input class="grupo_formulario" type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
             </fieldset>
     </div>
     <br>
@@ -120,8 +120,8 @@
                 </div>
                 <div class="grupo-formulario">
                     <label>CEP:</label>
-                    <input class="grupo_formulario" type="number" min="5" max="5"> <span>-</span> <input type="number" min="2"
-                        max="2">
+                    <input class="grupo_formulario" type="number" min="5" max="5"> <span>-</span> <input type="number"
+                        min="2" max="2">
                 </div>
             </fieldset>
 
@@ -130,3 +130,10 @@
                 <Button class="botao_fale"> Enviar </Button>
                 <Button class="botao_fale"> Limpar </Button>
             </div>
+        </form>
+    </div>
+</body>
+
+<footer>
+
+</footer>
