@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -36,17 +41,10 @@
                     <label>Nome:</label>
                     <input class="grupo_formulario" type="text" />
                     <label>Sobrenome:</label>
-                    <input type="text" />
-
-                </div>
-                <div class="grupo-formulario">
+                    <input class="grupo_formulario" type="text" />
                     <label>Nascimento:</label>
-                    <input class="grupo_formulario" type="number" min="1" max="31" placeholder="dd">
-                    <input type="number" min="1" max="12" placeholder="mm">
-                    <input type="number" min="1900" max="2022" placeholder="yyyy">
-                </div>
-                <div class="grupo-formulario">
-                    <label>Sexo:</label>
+                    <input class="grupo_formulario" id="date" type="date">
+                    &ensp;<label>Sexo:</label>
                     <select class="grupo_formulario" id="Sexo" name="Sexo">
                         <option value="">Selecione</option>
                         <option value="Masculino">Masculino</option>
@@ -55,13 +53,16 @@
                     </select>
                 </div>
                 <div>
-                    <label>E-mail:</label>
-                    <input class="grupo_formulario" type="email" />
-                </div>
-                <div class="grupo-formulario">
+                    &emsp;&emsp; <label>E-mail:</label>
+                    <input class="grupo_formulario" type="email" size="30" cellspacing="2" />
                     <label>CPF:</label>
-                    <input class="grupo_formulario" type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    <input class="grupo_formulario" id="cpf" type="text" class="form-control" \
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    <script>
+                        $("#cpf").keypress(function () {
+                            $(this).mask('000.000.000-00');
+                        });
+                    </script>
             </fieldset>
     </div>
     <br>
@@ -71,15 +72,13 @@
                 <legend>Dados de Endereço</legend>
                 <div class="grupo-formulario">
                     <label>Rua:</label>
-                    <input class="grupo_formulario" type="text" />
+                    <input class="grupo_formulario" type="text" size="30" />
                     <label>Numero:</label>
-                    <input type="text" />
-                </div>
-                <div class="grupo-formulario">
+                    <input class="grupo_formulario" type="text" size="4" />
                     <label>Bairro:</label>
-                    <input class="grupo_formulario" type="text" />
-                    <div>
-                        <label>Estado:</label>
+                    <input class="grupo_formulario" type="text" size="30" />
+                    <div >
+                        &emsp;&emsp;<label>Estado:</label>
                         <select class="grupo_formulario" id="UF" name="UF">
                             <option value="">Selecione</option>
                             <option value="AC">Acre</option>
@@ -111,24 +110,21 @@
                             <option value="TO">Tocantins</option>
                         </select>
 
+                        <label>Cidade:</label>
+                        <input class="grupo_formulario" type="text" size="30">
+                        <label>CEP:</label>
+                        <input class="grupo_formulario" type="text" id="cep" size="15">
+                        <script>$("#cep").keypress(function () {
+                                $(this).mask('00.000-000');
+                            });
+                        </script>
                     </div>
-
-                </div>
-                <div class="grupo-formulario">
-                    <label>Cidade:</label>
-                    <input class="grupo_formulario" type="text">
-                </div>
-                <div class="grupo-formulario">
-                    <label>CEP:</label>
-                    <input class="grupo_formulario" type="number" min="5" max="5"> <span>-</span> <input type="number"
-                        min="2" max="2">
-                </div>
             </fieldset>
 
             <div class="grupo-formulario">
 
-                <Button class="botao_fale"> Enviar </Button>
-                <Button class="botao_fale"> Limpar </Button>
+                <Button type="submit" class="botao_fale"> Enviar formulario </Button>
+                <Button type="reset" class="botao_fale"> Limpar </Button>
             </div>
         </form>
     </div>

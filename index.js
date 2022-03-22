@@ -7,14 +7,15 @@ function calculo() {
     console.log(imc)
 
     if (imc < 18.5)
-        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Magreza"
+        resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2)  +  " Classificação: Magreza"
     else if (imc < 24.9)
-        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Peso normal"
+        resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2)  +  " Classificação: Peso normal"
     else if (imc < 29.9)
-        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Sobrepeso"
+        resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2)  +  " Classificação: Sobrepeso"
     else if (imc < 39.9)
-        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Obesidade"
+        resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2)  +  " Classificação: Obesidade"
     else
-        resultado.innerHTML = "Seu IMC é: " + imc + " Classificação: Obesidade grave"
+        resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2)  +  " Classificação: Obesidade grave"
     console.log(resultado)
 }
+
