@@ -40,9 +40,9 @@ A Página contém:
   
 # Autores
 
-<strong>Danilo</strong> <br>
-LinkedIn:  <br>
-E-mail:  <br>
+<strong>Danilo de Souza Rufino</strong> <br>
+LinkedIn: https://www.linkedin.com/in/danilo-rufino-202b02214/ <br>
+E-mail: desouzafino@gmail.com <br>
 
 <strong>José Ricardo Chies Gonçalves</strong> <br>
 LinkedIn: https://www.linkedin.com/in/ricardo-chies-087557216/ <br>
