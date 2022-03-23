@@ -7,18 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
-<body>
-
+<header>
     <nav>
+        <ul>
+            <li><svg width="100" height="50">
+                    <rect width="100" height="50" style="fill:#019c96;stroke-width:3;stroke:white" />
+                    <text height="50" width="100" x="20" y="30" fill="black" stroke="black">RDM Nutri</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg></li>
+        </ul>
         <ul class="container">
             <li><a href='imc.html'>Calculo de IMC</a></li>
             <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='form.html'>Fale conosco</a></li>
-            </div>
+        </ul>
     </nav>
+</header>
 
+<body>
     <figure class="cabecalho">
         <img
             src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
@@ -36,17 +49,10 @@
                     <label>Nome:</label>
                     <input class="grupo_formulario" type="text" />
                     <label>Sobrenome:</label>
-                    <input type="text" />
-
-                </div>
-                <div class="grupo-formulario">
+                    <input class="grupo_formulario" type="text" />
                     <label>Nascimento:</label>
-                    <input class="grupo_formulario" type="number" min="1" max="31" placeholder="dd">
-                    <input type="number" min="1" max="12" placeholder="mm">
-                    <input type="number" min="1900" max="2022" placeholder="yyyy">
-                </div>
-                <div class="grupo-formulario">
-                    <label>Sexo:</label>
+                    <input class="grupo_formulario" id="date" type="date">
+                    &ensp;<label>Sexo:</label>
                     <select class="grupo_formulario" id="Sexo" name="Sexo">
                         <option value="">Selecione</option>
                         <option value="Masculino">Masculino</option>
@@ -55,13 +61,16 @@
                     </select>
                 </div>
                 <div>
-                    <label>E-mail:</label>
-                    <input class="grupo_formulario" type="email" />
-                </div>
-                <div class="grupo-formulario">
+                    &emsp;&emsp; <label>E-mail:</label>
+                    <input class="grupo_formulario" type="email" size="30" cellspacing="2" />
                     <label>CPF:</label>
-                    <input class="grupo_formulario" type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    <input class="grupo_formulario" id="cpf" type="text" class="form-control" \
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    <script>
+                        $("#cpf").keypress(function () {
+                            $(this).mask('000.000.000-00');
+                        });
+                    </script>
             </fieldset>
     </div>
     <br>
@@ -71,15 +80,13 @@
                 <legend>Dados de Endereço</legend>
                 <div class="grupo-formulario">
                     <label>Rua:</label>
-                    <input class="grupo_formulario" type="text" />
+                    <input class="grupo_formulario" type="text" size="30" />
                     <label>Numero:</label>
-                    <input type="text" />
-                </div>
-                <div class="grupo-formulario">
+                    <input class="grupo_formulario" type="text" size="4" />
                     <label>Bairro:</label>
-                    <input class="grupo_formulario" type="text" />
+                    <input class="grupo_formulario" type="text" size="30" />
                     <div>
-                        <label>Estado:</label>
+                        &emsp;&emsp;<label>Estado:</label>
                         <select class="grupo_formulario" id="UF" name="UF">
                             <option value="">Selecione</option>
                             <option value="AC">Acre</option>
@@ -111,29 +118,27 @@
                             <option value="TO">Tocantins</option>
                         </select>
 
+                        <label>Cidade:</label>
+                        <input class="grupo_formulario" type="text" size="30">
+                        <label>CEP:</label>
+                        <input class="grupo_formulario" type="text" id="cep" size="15">
+                        <script>$("#cep").keypress(function () {
+                                $(this).mask('00000-000');
+                            });
+                        </script>
                     </div>
-
-                </div>
-                <div class="grupo-formulario">
-                    <label>Cidade:</label>
-                    <input class="grupo_formulario" type="text">
-                </div>
-                <div class="grupo-formulario">
-                    <label>CEP:</label>
-                    <input class="grupo_formulario" type="number" min="5" max="5"> <span>-</span> <input type="number"
-                        min="2" max="2">
-                </div>
             </fieldset>
 
-            <div class="grupo-formulario">
+            <div class="botao_form">
 
-                <Button class="botao_fale"> Enviar </Button>
-                <Button class="botao_fale"> Limpar </Button>
+                <Button type="submit" class="botao_final"> Enviar formulario </Button>
+                <Button type="reset" class="botao_final"> Limpar </Button>
             </div>
         </form>
     </div>
 </body>
 
 <footer>
-
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2641003965687!2d-46.78525048255615!3d-23.666511599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53a602971645%3A0x87c582407a9da56f!2sCentro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20-%20UNASP-SP!5e0!3m2!1spt-BR!2sbr!4v1647544933298!5m2!1spt-BR!2sbr"></iframe>
 </footer>

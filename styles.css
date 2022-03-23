@@ -7,7 +7,7 @@ p {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: sans-serif;
 }
@@ -28,11 +28,14 @@ ul {
   list-style: none;
 }
 
+header {
+  align-items: start;
+}
+
 nav {
   background: black;
   font-size: 0;
   position: relative;
-
 }
 
 nav>ul>li {
@@ -55,6 +58,11 @@ nav>ul>li:hover>a {
   border-bottom: 3px solid #019c96;
 }
 
+svg {
+  margin-top: 1em;
+  margin-left: 5em;
+}
+
 .cabecalho {
   margin: auto;
   width: 100%;
@@ -68,36 +76,44 @@ nav>ul>li:hover>a {
 h1 {
   font-size: 50px;
   color: white;
+  text-align: center;
 }
 
 h2 {
   font-size: 30px;
   color: white;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  color: white;
+}
+
+p {
+  text-align: center;
 }
 
 .sobre {
-  margin-left: 2em;
-  margin-right: 5em;
+  margin-left: 18em;
+  margin-right: 18em;
+  text-align: center;
 }
 
 .visao {
-  margin-left: 2em;
-  margin-right: 5em;
+  margin: auto
 }
 
 .missao {
-  margin-left: 2em;
-  margin-right: 5em;
+  margin: auto
 }
 
 .valores {
-  margin-left: 2em;
-  margin-right: 5em;
+  margin: auto
 }
 
 .fale_conosco {
-  margin-left: 2em;
-  margin-right: 5em; 
+  margin: auto
 }
 
 input {
@@ -105,21 +121,16 @@ input {
 }
 
 .imc_sobre {
-  margin-left: 2em;
-  margin-right: 5em;
+  text-align: center;
 }
 
-.sub_titulo{
-  margin-top: 2em;
-}
-
-.grupo_formulario {
-  margin-top: 1em;
+.sub_titulo {
+  margin: auto
 }
 
 fieldset {
-  margin-left: 2em;
-  margin-right: 7em;
+  margin-left: 7em;
+  margin-right: 10em;
   color: white;
 }
 
@@ -144,14 +155,15 @@ fieldset {
 }
 
 .resultado_imc {
-  margin-top: 2em;
+  margin-top: 3em;
   background-color: #fff;
   display: flex;
   padding: 1em;
   flex-direction: column;
   color: black;
-  width: 18em;
+  width: 14em;
   font-family: sans-serif;
+  text-align: start;
 
 }
 
@@ -166,17 +178,16 @@ table {
   background-color: white;
 }
 
+.tabela{
+  text-align: center;
+}
+
 .tb_claro {
   background: white;
 }
 
 .tb_escuro {
   background: #9f9f9f;
-}
-
-textarea {
-  width: 100%;
-  margin-top: 2em;
 }
 
 .area {
@@ -186,7 +197,7 @@ textarea {
 button {
   height: 3em;
   width: 100%;
-  background-color:black;
+  background-color: black;
   border: none;
   color: white;
   border-radius: 1.5em;
@@ -196,24 +207,36 @@ button:hover {
   cursor: pointer;
 }
 
-.botao_fale {
+.botao_final {
   height: 3em;
   width: 15em;
   background-color: #019c96;
   color: black;
   margin-top: 1em;
-  margin-left: 2em;
+  border-radius: 1em;
+  text-align: center;
 }
+
+.botao_form {
+  margin-top: 2em;
+  margin-left: 6.5em;
+}
+
 
 iframe {
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 2em;
-  width: 100%;
+  width: 94em;
   height: 25em;
 }
 
 footer {
   margin-top: 2em;
+}
+
+.grupo_formulario {
+    margin-top: 1em;
+    border-radius: 5px;
 }

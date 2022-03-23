@@ -9,97 +9,106 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
-<body>
 
+<header>
     <nav>
+        <ul>
+            <li><svg width="100" height="50">
+                    <rect width="100" height="50" style="fill:#019c96;stroke-width:3;stroke:white" />
+                    <text height="50" width="100" x="20" y="30" fill="black" stroke="black">RDM Nutri</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg></li>
+        </ul>
         <ul class="container">
             <li><a href='imc.html'>Calculo de IMC</a></li>
             <li><a href='sobre.html'>Sobre nós</a></li>
             <li><a href='form.html'>Fale conosco</a></li>
-            </div>
+        </ul>
     </nav>
+</header>
 
+<body>
     <figure class="cabecalho">
-        <img src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
+        <img
+            src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
     </figure>
-
 
     <div class="imc_sobre">
         <h1>O que é IMC?</h1>
-        <p>
-            IMC é a sigla para Índice de Massa Corporal,
-            que é um cálculo que serve para avaliar se a pessoa está dentro do seu peso ideal em relação à altura.</p>
-        <p>Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se está dentro do peso ideal,
+
+        <p>IMC é a sigla para Índice de Massa Corporal, que é um cálculo que serve para avaliar se a pessoa está dentro
+            do seu peso ideal em relação à altura.<br>
+            Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se está dentro do peso ideal,
             acima ou abaixo do peso desejado.</p>
 
-        <p>Estar dentro do peso certo é importante porque estar acima ou abaixo desse peso pode influenciar
-            bastante a saúde,
-            aumentando o risco de doenças como desnutrição quando se está abaixo do peso, e AVC ou infarto,
-            quando se está acima do peso. </p>
-        <p>Assim, é comum os médicos,
-            enfermeiros e nutricionistas avaliem o IMC da pessoa nas consultas de rotina para verificar
-            a possibilidade de doenças que a pessoa pode estar pre-disposta.
+        <p>Estar dentro do peso certo é importante porque estar acima ou abaixo desse peso pode influenciar bastante a
+            saúde,<br>
+            aumentando o risco de doenças como desnutrição quando se está abaixo do peso, e AVC ou infarto, quando se
+            está acima do peso.<br>
+            Assim, é comum os médicos, enfermeiros e nutricionistas avaliarem o IMC da pessoa nas consultas de
+            rotina<br>
+            para verificar a possibilidade de doenças que a pessoa pode estar pre-disposta.</p>
 
-            <div class="tabela">
-                <table>
-                    <tr class="tb_escuro">
-                        <th>IMC</th>
-                        <th>CLASSIFICAÇÃO</th>
-                        <th>OBESIDADE(GRAU)</th>
-                    </tr>
-                    <tr class="tb_claro">
-                        <td>MENOR QUE 18,5</td>
-                        <td>MAGREZA</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="tb_escuro">
-                        <td>ENTRE 18,5 E 24,9</td>
-                        <td>NORMAL</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="tb_claro">
-                        <td>ENTRE 25,0 E 29,9</td>
-                        <td>SOBREPESO</td>
-                        <td>I</td>
-                    </tr>
-                    <tr class="tb_escuro">
-                        <td>ENTRE 30,0 E 39,9</td>
-                        <td>OBESIDADE</td>
-                        <td>II</td>
-                    </tr>
-                    <tr class="tb_claro">
-                        <td>MAIOR QUE 40,0</td>
-                        <td>OBESIDADE GRAVE</td>
-                        <td>III</td>
-                    </tr>
-                </table>
-            </div>
-
-    <div class="sub_titulo">
-        <h2>Preencha sua altura e peso para seu resultado</h2>
-    </div>
-
-    <div class="area">
-        <div class="imc">
-            <h2 class="imc_titulo">Calcule seu IMC</h2>
-            <div class="input_area">
-                <h3>Altura (m)</h3>
-                <input id="altura" type="number">
-            </div>
-            <div class="input_area">
-                <h3>Peso (kg)</h3>
-                <input id="peso" type="number">
-            </div>
-            <button id="botao_calcular" onclick="calculo()">Calcular</button>
-
-            <div class="resultado_imc">
-            Resultado: <span id="resultado"></span>
+        <div class="tabela">
+            <table>
+                <tr class="tb_escuro">
+                    <th>IMC</th>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>OBESIDADE(GRAU)</th>
+                </tr>
+                <tr class="tb_claro">
+                    <td>MENOR QUE 18,5</td>
+                    <td>MAGREZA</td>
+                    <td>0</td>
+                </tr>
+                <tr class="tb_escuro">
+                    <td>ENTRE 18,5 E 24,9</td>
+                    <td>NORMAL</td>
+                    <td>0</td>
+                </tr>
+                <tr class="tb_claro">
+                    <td>ENTRE 25,0 E 29,9</td>
+                    <td>SOBREPESO</td>
+                    <td>I</td>
+                </tr>
+                <tr class="tb_escuro">
+                    <td>ENTRE 30,0 E 39,9</td>
+                    <td>OBESIDADE</td>
+                    <td>II</td>
+                </tr>
+                <tr class="tb_claro">
+                    <td>MAIOR QUE 40,0</td>
+                    <td>OBESIDADE GRAVE</td>
+                    <td>III</td>
+                </tr>
+            </table>
         </div>
+
+        <div class="sub_titulo">
+            <h2>Preencha sua altura e peso para seu resultado</h2>
         </div>
-    </div>
-    <script src="index.js"></script>
+
+        <div class="area">
+            <div class="imc">
+                <h2 class="imc_titulo">Calcule seu IMC</h2>
+                <div class="input_area">
+                    <h3>Altura(m)</h3>
+                    <input id="altura" type="number">
+                </div>
+                <div class="input_area">
+                    <h3>Peso(kg)</h3>
+                    <input id="peso" type="number">
+                </div>
+                <button id="botao_calcular" onclick="calculo()">Calcular</button>
+
+                <div class="resultado_imc">
+                    Resultado: <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
 </body>
 
 <footer>
-    
+
 </footer>
