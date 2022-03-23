@@ -84,7 +84,6 @@ h2 {
   color: white;
   text-align: center;
 }
-<<<<<<< HEAD
 
 h3{
   font-size: 30px;
@@ -93,11 +92,6 @@ h3{
 
 p {
   text-align: center;
-=======
-h3{
-  font-size: 30px;
-  color: white;
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
 }
 
 .sobre {
@@ -119,12 +113,7 @@ h3{
 }
 
 .fale_conosco {
-<<<<<<< HEAD
   margin: auto
-=======
-  margin-left: 2em;
-  margin-right: 5em;
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
 }
 
 input {
@@ -136,15 +125,8 @@ input {
 }
 
 .sub_titulo {
-<<<<<<< HEAD
   margin: auto
 }
-=======
-  margin-top: 2em;
-}
-
-
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
 
 fieldset {
   margin-left: 7em;
@@ -179,14 +161,9 @@ fieldset {
   padding: 1em;
   flex-direction: column;
   color: black;
-<<<<<<< HEAD
   width: 14em;
-=======
-  width: 15em;
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
   font-family: sans-serif;
   text-align: start;
-
 }
 
 .imc_titulo {
@@ -230,26 +207,19 @@ button:hover {
   cursor: pointer;
 }
 
+.botao_form {
+  margin-left: 7em;
+}
+
 .botao_final {
   height: 3em;
   width: 15em;
   background-color: #019c96;
   color: black;
   margin-top: 1em;
-<<<<<<< HEAD
   border-radius: 1em;
   text-align: center;
 }
-
-.botao_form {
-  margin-top: 2em;
-  margin-left: 6.5em;
-=======
-  margin-left: 17em;
-  border-radius: 10px 20px;
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
-}
-
 
 iframe {
   margin-top: 2em;
@@ -268,9 +238,3 @@ footer {
     margin-top: 1em;
     border-radius: 5px;
 }
-<<<<<<< HEAD
-=======
-.tabela{
-  text-align: center;
-}
->>>>>>> 29009ef684298232e2a41c7b4a60b47d3b651a75
