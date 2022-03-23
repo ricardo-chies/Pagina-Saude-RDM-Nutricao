@@ -48,6 +48,6 @@ E-mail:  <br>
 LinkedIn: https://www.linkedin.com/in/ricardo-chies-087557216/ <br>
 E-mail: ricardochies5@gmail.com <br>
 
-<strong>Mateus Franklin</strong> <br>
-LinkedIn:  <br>
-E-mail:  <br>
+<strong>Mateus Franklin Neco</strong> <br>
+LinkedIn: https://www.linkedin.com/in/mateus-franklin-3049941a2/ <br>
+E-mail: matfranklin@outlook.com <br>
