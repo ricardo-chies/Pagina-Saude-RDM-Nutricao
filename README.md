@@ -19,6 +19,17 @@ A Página contém:
   
 # Layout do Projeto
 
+<p align="center">
+  <img width="900" height="450" src="src/assets/to_readme/rdm_nutri.gif">
+
+<p align="center">
+  <img width="900" height="450" src="src/assets/to_readme/imc.png">
+  <img width="900" height="450" src="src/assets/to_readme/imc2.png">
+  <img width="900" height="450" src="src/assets/to_readme/sobre.png">
+  <img width="900" height="450" src="src/assets/to_readme/sobre2.png">
+  <img width="900" height="450" src="src/assets/to_readme/form.png">
+  <img width="900" height="450" src="src/assets/to_readme/form2.png">
+</p>
 
 # Tecnologias Utilizadas
 <ul>
