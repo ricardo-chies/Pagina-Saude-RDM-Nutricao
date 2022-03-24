@@ -26,6 +26,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+  
 }
 
 header {
@@ -36,6 +37,7 @@ nav {
   background: black;
   font-size: 0;
   position: relative;
+  
 }
 
 nav>ul>li {
@@ -54,11 +56,14 @@ nav>ul>li>a {
 }
 
 nav>ul>li:hover>a {
-  color: #019c96;
-  border-bottom: 3px solid #019c96;
+  color: black;
+  border-bottom: 2px dotted #019c96;
+  border-radius: 1em;
+  background-color: #019c96;
 }
 
 svg {
+  display: block;
   margin-top: 1em;
   margin-left: 5em;
 }
@@ -67,7 +72,6 @@ svg {
   margin: auto;
   width: 100%;
 }
-
 .titulo {
   margin-left: 2em;
   margin-right: 5em;
@@ -132,6 +136,7 @@ fieldset {
   margin-left: 7em;
   margin-right: 10em;
   color: white;
+   border-color: #019c96;
 }
 
 .input_area {
@@ -226,8 +231,9 @@ iframe {
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 2em;
-  width: 94em;
   height: 25em;
+  margin: auto;
+  width: 100%;
 }
 
 footer {
@@ -236,5 +242,14 @@ footer {
 
 .grupo_formulario {
     margin-top: 1em;
-    border-radius: 5px;
+    border: #019c96;
+    border-radius: 10px;
+}
+
+.border-red {
+  border: 5px solid red;
+}
+
+.border-green {
+  border: 5px solid green;
 }
