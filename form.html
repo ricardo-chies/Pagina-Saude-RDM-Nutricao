@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <header>
@@ -19,7 +20,7 @@
         <ul>
             <li><svg width="100" height="50">
                     <rect width="100" height="50" style="fill:#019c96;stroke-width:3;stroke:white" />
-                    <text height="50" width="100" x="20" y="30" fill="black" stroke="black">RDM Nutri</text>
+                    <text height="50" width="100" x="35" y="30" fill="black" stroke="black">RDM</text>
                     Sorry, your browser does not support inline SVG.
                 </svg></li>
         </ul>
@@ -34,7 +35,7 @@
 <body>
     <figure class="cabecalho">
         <img
-            src="https://scontent.fcgh44-1.fna.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=53RfWyRJg5wAX91RdGv&tn=t3l_Y83lDTGixfp3&_nc_ht=scontent.fcgh44-1.fna&oh=00_AT9wFBgWtvNVT5AQRZExUhRZeacxClGeDGCWxj0gOCXqTA&oe=62391235">
+            src="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/276123759_3212863909001945_4826446134374960499_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGsXOlAZ32_895tWN29vxEpv6EF_7RBlqm_oQX_tEGWqVQIJAMVMFEvuiTMrX1SP3tNAuB4ltbz35PdPJkpA9te&_nc_ohc=Vh4_4kaKBMQAX8rulQN&_nc_ht=scontent-gru1-2.xx&oh=00_AT-zGuZJlAegcNp2KPSN00GpXl9np5BOhjz4xx6ri34KfA&oe=6240FB35">
     </figure>
 
     <div class="titulo">
@@ -64,13 +65,9 @@
                     &emsp;&emsp; <label>E-mail:</label>
                     <input class="grupo_formulario" type="email" size="30" cellspacing="2" />
                     <label>CPF:</label>
-                    <input class="grupo_formulario" id="cpf" type="text" class="form-control" \
-                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
-                    <script>
-                        $("#cpf").keypress(function () {
-                            $(this).mask('000.000.000-00');
-                        });
-                    </script>
+                    <input class="grupo_formulario" id="cpf">
+                        
+
             </fieldset>
     </div>
     <br>
@@ -132,7 +129,7 @@
             </fieldset>
 
             <div class="botao_form">
-                <Button type="submit" class="botao_final"> Enviar formulario </Button>
+                <Button type="button" onclick="enviarForm()" class="botao_final" value="Enviar"> Enviar formulario </Button>
                 <Button type="reset" class="botao_final"> Limpar </Button>
             </div>
         </form>
