@@ -1,3 +1,4 @@
+//Calculo IMC
 function calculo() {
     var altura = document.getElementById("altura").value
     var peso = document.getElementById("peso").value
@@ -16,7 +17,7 @@ function calculo() {
         resultado.innerHTML = "Seu IMC é: " + imc.toFixed(2) + " Classificação: Obesidade grave"
 }
 
-
+//Validação de CPF
 function enviarForm(){
 	var inputCPF = document.getElementById("cpf");
 	
