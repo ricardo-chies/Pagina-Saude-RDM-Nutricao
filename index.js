@@ -22,11 +22,11 @@ function enviarForm(){
 	var inputCPF = document.getElementById("cpf");
 	
 	if(validarCPF(inputCPF.value)){
-		alert("Válido");
+		alert("Preenchimento válido");
 		inputCPF.classList.remove("erro");
         inputCPF.classList.add("border-green")
 	}else{
-		alert("invalido");
+		alert("Preenchimento inválido");
 		inputCPF.focus()
 		inputCPF.classList.add("erro");
         inputCPF.classList.add("border-red")
